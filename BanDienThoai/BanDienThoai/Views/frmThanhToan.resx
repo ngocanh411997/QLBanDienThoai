@@ -117,4 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="id.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ten.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="tongtien.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnThoat.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAK
+        7QAACu0BAohJwQAAABh0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzT7MfTgAAAmVJREFUSEu10dtP
+        kmEYAPAPpLaW2mrLqYRAOQvk42OE2jzOdUF1k6PucjkvirUJXeh0drAUl2zoFDVJh6xC10W2yq3TbIGR
+        iKZw47rpb+iif6Cn58F9DORVnOLFj/d9nyMMDgAOFDOYTcxgNjGDmTyPFeR61/LVrNxWzGAmvqjx7YtY
+        w7/pdV0HK5+MGcxkYkXxezxSBN71GphaM3ayakTMYCbuZfnGcLgQRsLFuKAOPKvnt12SuDiC0nzPz4aH
+        vtj1wemoxcXii15zeaNXXUNLqj+DSwpw/ZADnZ7VehhbMTGXJC7uSKV1NFILI8sVqHJbw5h3hk4jVdzA
+        dyWeahhfaaR82n+SuDhD5XZHUAV9QeWOHKh/8UwKx6Iaz1JwRy7CULjqDnNBX1Bjexwog705C48CpdAb
+        1OCCRngSMpanLXjwVWe7t6CBvbqPuhfKoOebAL2Biva0BZ2feFvHRy3sV/sHLXR91pvSFtjnBbvtvQ72
+        o+2dDu7OG7rFmSkLrHOGtluvediVOR5ub0Fx6xthIHk4SVxaXxkLWmaFiZZZw8wO/KTZr//b7OdBdOMl
+        DzdnBGfyYFFaYDcsk8JG0yQPTc82Wab0ad9cxAxmcnnM8Mvs5sE8qocrT4V+Vo0o/pHDcTKUh46jk6gQ
+        FaNTSIFKkJJwHHeiukf3pdaph6quc158H0FFmKMe6qUZNEuWvCAXqZAWGZAJXUDVqAbVoXoixfexkjyz
+        6pK8FQfrJZt1hHqol2bQrKOJBSIMEgmSohxEv4wcEsk47jCWSeLNmMM35amWeqg3ZWbK4yAwg9nEDGYP
+        cP8B5ryAoxXy+SYAAAAASUVORK5CYII=
+</value>
+  </data>
 </root>
