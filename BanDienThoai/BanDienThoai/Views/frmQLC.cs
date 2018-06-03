@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -58,6 +59,36 @@ namespace BanDienThoai.Views
             }
             else
                 this.Show();
+        }
+
+        private void btnNhaCC_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmNhaSanXuat NV = new frmNhaSanXuat();
+            NV.ShowDialog();
+            this.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmDanhMuc NV = new frmDanhMuc();
+            NV.ShowDialog();
+            this.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+            if (MessageBox.Show("Xóa thông tin tài khoản đã lưu? \nBạn sẽ phải thiết đặt lại thông tin trong lần đăng nhập tới!", "Xóa thông tin đã lưu", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                File.Delete("config");
+                File.Delete("info.ini");
+                MessageBox.Show("Đã xóa thông tin tài khoản!");
+                Views.frmConnect lg = new frmConnect();
+                this.Hide();
+                lg.ShowDialog();
+            }
         }
     }
 }

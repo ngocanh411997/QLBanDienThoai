@@ -58,6 +58,8 @@
     <Compile Include="DAL\DALNhanVien.cs" />
     <Compile Include="DAL\DALNhiemVu.cs" />
     <Compile Include="DAL\KetNoi.cs" />
+    <Compile Include="DataAccess\ConnectionString.cs" />
+    <Compile Include="DataAccess\ThamSoKetNoi.cs" />
     <Compile Include="Entity\EntityChiTietDonDatHang.cs" />
     <Compile Include="Entity\EntityDonDatHang.cs" />
     <Compile Include="Entity\EntityNhanVien.cs" />
@@ -71,6 +73,18 @@
     <Compile Include="Views\frmChiTietDonDatHang.Designer.cs">
       <DependentUpon>frmChiTietDonDatHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\frmConnect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmConnect.Designer.cs">
+      <DependentUpon>frmConnect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmDanhMuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmDanhMuc.Designer.cs">
+      <DependentUpon>frmDanhMuc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\frmDonDatHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,11 +97,23 @@
     <Compile Include="Views\frmHoaDonDaThanhToan.Designer.cs">
       <DependentUpon>frmHoaDonDaThanhToan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\frmNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\frmNhanVien.Designer.cs">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmNhaSanXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmNhaSanXuat.Designer.cs">
+      <DependentUpon>frmNhaSanXuat.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\frmNhiemVu.cs">
       <SubType>Form</SubType>
@@ -115,9 +141,16 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Views\frmChiTietDonDatHang.resx">
       <DependentUpon>frmChiTietDonDatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmConnect.resx">
+      <DependentUpon>frmConnect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmDanhMuc.resx">
+      <DependentUpon>frmDanhMuc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmDonDatHang.resx">
       <DependentUpon>frmDonDatHang.cs</DependentUpon>
@@ -125,8 +158,14 @@
     <EmbeddedResource Include="Views\frmHoaDonDaThanhToan.resx">
       <DependentUpon>frmHoaDonDaThanhToan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\frmNhanVien.resx">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmNhaSanXuat.resx">
+      <DependentUpon>frmNhaSanXuat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmNhiemVu.resx">
       <DependentUpon>frmNhiemVu.cs</DependentUpon>
@@ -151,7 +190,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
