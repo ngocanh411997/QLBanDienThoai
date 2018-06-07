@@ -52,9 +52,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\BUSDonDatHang.cs" />
+    <Compile Include="BUS\BUSKhachHang.cs" />
     <Compile Include="BUS\BUSNhanVien.cs" />
     <Compile Include="BUS\BUSNhiemVu.cs" />
     <Compile Include="DAL\DALDonDatHang.cs" />
+    <Compile Include="DAL\DALKhachHang.cs" />
     <Compile Include="DAL\DALNhanVien.cs" />
     <Compile Include="DAL\DALNhiemVu.cs" />
     <Compile Include="DAL\KetNoi.cs" />
@@ -62,6 +64,7 @@
     <Compile Include="DataAccess\ThamSoKetNoi.cs" />
     <Compile Include="Entity\EntityChiTietDonDatHang.cs" />
     <Compile Include="Entity\EntityDonDatHang.cs" />
+    <Compile Include="Entity\EntityKhachHang.cs" />
     <Compile Include="Entity\EntityNhanVien.cs" />
     <Compile Include="Entity\EntityNhiemVu.cs" />
     <Compile Include="Helper\files.cs" />
@@ -96,6 +99,12 @@
     </Compile>
     <Compile Include="Views\frmHoaDonDaThanhToan.Designer.cs">
       <DependentUpon>frmHoaDonDaThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmKhachHang.Designer.cs">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\frmLogin.cs">
       <SubType>Form</SubType>
@@ -157,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmHoaDonDaThanhToan.resx">
       <DependentUpon>frmHoaDonDaThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmKhachHang.resx">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
