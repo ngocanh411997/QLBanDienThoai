@@ -31,18 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQLC));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnHoaDonTT = new System.Windows.Forms.Button();
             this.btnPhieuYC = new System.Windows.Forms.Button();
             this.btnNhanVien = new System.Windows.Forms.Button();
             this.btnBoPhan = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
             this.btnNhaCC = new System.Windows.Forms.Button();
             this.btnMon = new System.Windows.Forms.Button();
             this.btnKhachHang = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -73,28 +73,18 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Nhiệm Vụ";
             // 
-            // groupBox1
+            // button4
             // 
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.btnNhaCC);
-            this.groupBox1.Controls.Add(this.btnMon);
-            this.groupBox1.Controls.Add(this.btnKhachHang);
-            this.groupBox1.Location = new System.Drawing.Point(13, 102);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(230, 269);
-            this.groupBox1.TabIndex = 10;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Quản Lý Chung";
-            // 
-            // button1
-            // 
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(524, 11);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(76, 85);
-            this.button1.TabIndex = 13;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button4.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button4.Location = new System.Drawing.Point(245, 154);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(76, 92);
+            this.button4.TabIndex = 5;
+            this.button4.Text = "Xóa Tài Khoản Người Dùng";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseWaitCursor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button2
             // 
@@ -168,6 +158,19 @@
             this.btnBoPhan.UseWaitCursor = true;
             this.btnBoPhan.Click += new System.EventHandler(this.btnBoPhan_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.btnNhaCC);
+            this.groupBox1.Controls.Add(this.btnMon);
+            this.groupBox1.Controls.Add(this.btnKhachHang);
+            this.groupBox1.Location = new System.Drawing.Point(13, 102);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(230, 269);
+            this.groupBox1.TabIndex = 10;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Quản Lý Chung";
+            // 
             // button3
             // 
             this.button3.ForeColor = System.Drawing.SystemColors.Desktop;
@@ -221,19 +224,17 @@
             this.btnKhachHang.Text = "Khách Hàng";
             this.btnKhachHang.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnKhachHang.UseVisualStyleBackColor = true;
+            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
             // 
-            // button4
+            // button1
             // 
-            this.button4.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button4.Location = new System.Drawing.Point(245, 154);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(76, 92);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Xóa Tài Khoản Người Dùng";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.UseWaitCursor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(524, 11);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(76, 85);
+            this.button1.TabIndex = 13;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmQLC
             // 

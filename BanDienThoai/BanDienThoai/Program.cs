@@ -76,7 +76,7 @@ namespace BanDienThoai
                     MessageBox.Show("Kiểm tra lại thông tin kết nối và ấn OK để thiết lập lại!\n Eror: " + ex.Message);
                 }
             }
-
+           
             Application.Run(new Views.frmConnect());
         }
     }
