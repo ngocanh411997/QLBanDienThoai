@@ -10,7 +10,7 @@ END
 
 -- Thêm nhiệm vụ
 GO
-ALTER PROC ThemNhVu(@id VARCHAR(50), @nhiemvu NVARCHAR(50))
+CREATE PROC ThemNhVu(@id VARCHAR(50), @nhiemvu NVARCHAR(50))
 AS
 BEGIN
 	INSERT INTO dbo.tbl_nhiemvu
@@ -19,7 +19,7 @@ BEGIN
 END
 -- Sửa nhiệm vụ
 GO
-ALTER PROC SuaNhVu(@id VARCHAR(50), @nhiemvu NVARCHAR(50))
+CREATE PROC SuaNhVu(@id VARCHAR(50), @nhiemvu NVARCHAR(50))
 AS
 BEGIN
 	UPDATE dbo.tbl_nhiemvu
@@ -28,7 +28,7 @@ BEGIN
 END
 -- Xóa nhiệm vụ
 GO
-ALTER PROC XoaNhVu(@id VARCHAR(50))
+CREATE PROC XoaNhVu(@id VARCHAR(50))
 AS
 BEGIN
 	DELETE dbo.tbl_nhanvien

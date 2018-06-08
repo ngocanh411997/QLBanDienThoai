@@ -13,7 +13,7 @@ namespace BanDienThoai.DAL
         private SqlConnection conn;
         public KetNoi()
         {
-            conn = new SqlConnection(@"Data Source=NGOCANH\NGOCANH;Initial Catalog=gtmobile;Integrated Security=True");
+            conn = new SqlConnection(DataAccess.ConnectionString.connectionString);
         }
         public DataTable GetDataStr(string strSql)
         {
