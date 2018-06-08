@@ -74,7 +74,7 @@ namespace BanDienThoai.Views
                 txtTen.Text = Convert.ToString(dgvKH.CurrentRow.Cells["ten"].Value);
                 txtEmail.Text = Convert.ToString(dgvKH.CurrentRow.Cells["email"].Value);
                 txtSDT.Text = Convert.ToString(dgvKH.CurrentRow.Cells["sdt"].Value);
-                txtDiaChi.Text = Convert.ToString(dgvKH.CurrentRow.Cells["ngaysinh"].Value);
+                txtDiaChi.Text = Convert.ToString(dgvKH.CurrentRow.Cells["diachi"].Value);
             }
 
         }
@@ -246,7 +246,7 @@ namespace BanDienThoai.Views
             {
                 if (cbTimKiem.Text == "Mã KH")
                 {
-                    dgvKH.DataSource = Bus.TimKiem("SELECT * FROM tbl_khachhang LIKE'%" + txtTimKiem.Text + "%'");
+                    dgvKH.DataSource = Bus.TimKiem("SELECT * FROM tbl_khachhang where id LIKE'%" + txtTimKiem.Text + "%'");
                 }
                 if (cbTimKiem.Text == "Tên KH")
                 {
@@ -255,15 +255,15 @@ namespace BanDienThoai.Views
                
                 if (cbTimKiem.Text == "SĐT")
                 {
-                    dgvKH.DataSource = Bus.TimKiemTen("SELECT * FROM tbl_khachhang LIKE'%" + txtTimKiem.Text + "%'");
+                    dgvKH.DataSource = Bus.TimKiemTen("SELECT * FROM tbl_khachhang where sdt LIKE'%" + txtTimKiem.Text + "%'");
                 }
                 if (cbTimKiem.Text == "Email")
                 {
-                    dgvKH.DataSource = Bus.TimKiemTen("SELECT * FROM tbl_khachhang LIKE'%" + txtTimKiem.Text + "%'");
+                    dgvKH.DataSource = Bus.TimKiemTen("SELECT * FROM tbl_khachhang where email LIKE'%" + txtTimKiem.Text + "%'");
                 }
                 if (cbTimKiem.Text == "Địa Chỉ")
                 {
-                    dgvKH.DataSource = Bus.TimKiemTen("SELECT * FROM tbl_khachhang LIKE'%" + txtTimKiem.Text + "%'");
+                    dgvKH.DataSource = Bus.TimKiemTen("SELECT * FROM tbl_khachhang where diachi  LIKE N'%" + txtTimKiem.Text + "%'");
                 }
             }
         }
