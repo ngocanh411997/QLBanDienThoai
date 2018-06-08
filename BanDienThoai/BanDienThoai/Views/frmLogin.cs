@@ -36,14 +36,13 @@ namespace BanDienThoai.Views
                 da.Fill(dt);
                 if (dt.Rows.Count > 0)
                 {
-                    //DataAccess.Quyen.MaQuyen = dt.Rows[0][2].ToString();
+                    DataAccess.Quyen.MaQuyen = dt.Rows[0][3].ToString();
                     this.Hide();
                     frmQLC m = new frmQLC();
                     m.ShowDialog();
                 }
                 else
                 {
-                    //MessageBox.Show("Xem lại!");
                     MessageBox.Show(this, "Sai thông tin tài khoản", "Message");
                 }
             }
@@ -92,7 +91,7 @@ namespace BanDienThoai.Views
             Application.Exit();
         }
 
-      
+
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {

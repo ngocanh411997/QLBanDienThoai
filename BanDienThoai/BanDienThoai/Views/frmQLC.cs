@@ -55,7 +55,16 @@ namespace BanDienThoai.Views
             DialogResult dr = MessageBox.Show("Bạn chắc chắn muốn thoát?", "Xác nhận thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dr == DialogResult.Yes)
             {
-                this.Close();
+                if (MessageBox.Show("Xóa thông tin tài khoản đã lưu? \nBạn sẽ phải thiết đặt lại thông tin trong lần đăng nhập tới!", "Xóa thông tin đã lưu", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    File.Delete("config");
+                    File.Delete("info.ini");
+                    MessageBox.Show("Đã xóa thông tin tài khoản!");
+                    Views.frmConnect lg = new frmConnect();
+                    this.Hide();
+                    lg.ShowDialog();
+                }
+                Application.Exit();
             }
             else
                 this.Show();
@@ -79,16 +88,8 @@ namespace BanDienThoai.Views
 
         private void button4_Click(object sender, EventArgs e)
         {
-
-            if (MessageBox.Show("Xóa thông tin tài khoản đã lưu? \nBạn sẽ phải thiết đặt lại thông tin trong lần đăng nhập tới!", "Xóa thông tin đã lưu", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            {
-                File.Delete("config");
-                File.Delete("info.ini");
-                MessageBox.Show("Đã xóa thông tin tài khoản!");
-                Views.frmConnect lg = new frmConnect();
-                this.Hide();
-                lg.ShowDialog();
-            }
+            
+            
         }
 
         private void btnKhachHang_Click(object sender, EventArgs e)
@@ -97,6 +98,25 @@ namespace BanDienThoai.Views
             frmKhachHang KH = new frmKhachHang();
             KH.ShowDialog();
             this.Show();
+        }
+
+        private void btnTaiKhoan_Click(object sender, EventArgs e)
+        { 
+            if (Convert.ToInt16(DataAccess.Quyen.MaQuyen) > 1)
+            {
+                MessageBox.Show("Bạn không có quyền thực hiện thao tác này!");
+                return;
+            }
+            else
+            {
+                frmTaiKhoan tk = new frmTaiKhoan();
+                tk.Show();
+            }
+        }
+
+        private void frmQLC_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

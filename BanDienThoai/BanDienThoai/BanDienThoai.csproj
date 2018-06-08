@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BanDienThoai</RootNamespace>
     <AssemblyName>BanDienThoai</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -61,6 +62,7 @@
     <Compile Include="DAL\DALNhiemVu.cs" />
     <Compile Include="DAL\KetNoi.cs" />
     <Compile Include="DataAccess\ConnectionString.cs" />
+    <Compile Include="DataAccess\Quyen.cs" />
     <Compile Include="DataAccess\ThamSoKetNoi.cs" />
     <Compile Include="Entity\EntityChiTietDonDatHang.cs" />
     <Compile Include="Entity\EntityDonDatHang.cs" />
@@ -136,6 +138,12 @@
     <Compile Include="Views\frmQLC.Designer.cs">
       <DependentUpon>frmQLC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\frmTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmTaiKhoan.Designer.cs">
+      <DependentUpon>frmTaiKhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\frmThanhToan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmQLC.resx">
       <DependentUpon>frmQLC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmTaiKhoan.resx">
+      <DependentUpon>frmTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmThanhToan.resx">
       <DependentUpon>frmThanhToan.cs</DependentUpon>
