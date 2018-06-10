@@ -56,10 +56,12 @@
     <Compile Include="BUS\BUSKhachHang.cs" />
     <Compile Include="BUS\BUSNhanVien.cs" />
     <Compile Include="BUS\BUSNhiemVu.cs" />
+    <Compile Include="BUS\BUSSanPham.cs" />
     <Compile Include="DAL\DALDonDatHang.cs" />
     <Compile Include="DAL\DALKhachHang.cs" />
     <Compile Include="DAL\DALNhanVien.cs" />
     <Compile Include="DAL\DALNhiemVu.cs" />
+    <Compile Include="DAL\DALSanPham.cs" />
     <Compile Include="DAL\KetNoi.cs" />
     <Compile Include="DataAccess\ConnectionString.cs" />
     <Compile Include="DataAccess\Quyen.cs" />
@@ -69,6 +71,7 @@
     <Compile Include="Entity\EntityKhachHang.cs" />
     <Compile Include="Entity\EntityNhanVien.cs" />
     <Compile Include="Entity\EntityNhiemVu.cs" />
+    <Compile Include="Entity\EntitySanPham.cs" />
     <Compile Include="Helper\files.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -138,6 +141,12 @@
     <Compile Include="Views\frmQLC.Designer.cs">
       <DependentUpon>frmQLC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\frmSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmSanPham.Designer.cs">
+      <DependentUpon>frmSanPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\frmTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmQLC.resx">
       <DependentUpon>frmQLC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmSanPham.resx">
+      <DependentUpon>frmSanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmTaiKhoan.resx">
       <DependentUpon>frmTaiKhoan.cs</DependentUpon>

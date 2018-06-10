@@ -118,5 +118,13 @@ namespace BanDienThoai.Views
         {
             Application.Exit();
         }
+
+        private void btnMon_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmSanPham SP = new frmSanPham();
+            SP.ShowDialog();
+            this.Show();
+        }
     }
 }
