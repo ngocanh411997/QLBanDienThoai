@@ -52,7 +52,7 @@ namespace BanDienThoai.Views
             txtBH.Enabled = e;
             txtBluetooth.Enabled = e;
             txtIDNSX.Enabled = e;
-            txtTrangThai.Enabled = e;
+           
         }
         private void Clear()
         {
@@ -74,7 +74,7 @@ namespace BanDienThoai.Views
             txtBH.Text = "";
             txtBluetooth.Text = "";
             txtIDNSX.Text = "";
-            txtTrangThai.Text = "";
+           
         }
 
         private void HienThi()
@@ -134,10 +134,7 @@ namespace BanDienThoai.Views
             {
                 MessageBox.Show("Bạn chưa nhap gia! ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            if (txtTrangThai.Text == "")
-            {
-                MessageBox.Show("Bạn chưa nhập trạng thái! ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+           
 
 
             int _id_NSX;
@@ -187,11 +184,11 @@ namespace BanDienThoai.Views
             obj.BaoHanh = _BaoHanh;
             obj.Bluetooth = _Bluetooth;
             obj.id_NSX = _id_NSX;
-            obj.TrangThai = txtTrangThai.Text;
+            
 
 
 
-            if (txtID.Text != "" && txtIDNSX.Text != "" && txttenSP.Text != "" && txtBH.Text != "" && txtGia.Text != "" && txtTrangThai.Text != "" && HD == 0)
+            if (txtID.Text != "" && txtIDNSX.Text != "" && txttenSP.Text != "" && txtBH.Text != "" && txtGia.Text != "" && HD == 0)
             {
                 try
                 {
@@ -211,7 +208,7 @@ namespace BanDienThoai.Views
                     MessageBox.Show("Lỗi" + ex.Message);
                 }
             }
-            else if (txtID.Text != "" && txtIDNSX.Text != "" && txttenSP.Text != "" && txtBH.Text != "" && txtGia.Text != "" && txtTrangThai.Text != "" && HD == 1)
+            else if (txtID.Text != "" && txtIDNSX.Text != "" && txttenSP.Text != "" && txtBH.Text != "" && txtGia.Text != "" && HD == 1)
             {
                 try
                 {
@@ -300,7 +297,7 @@ namespace BanDienThoai.Views
             txtBH.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["baohanh"].Value);
             txtBluetooth.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["bluetooth"].Value);
             txtIDNSX.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["id_nhasanxuat"].Value);
-            txtTrangThai.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["TrangThai"].Value);
+            
         }
 
        

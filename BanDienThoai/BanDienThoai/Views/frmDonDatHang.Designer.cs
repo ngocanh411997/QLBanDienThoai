@@ -229,6 +229,7 @@
             this.btnDSKH.Text = "DS KH";
             this.btnDSKH.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnDSKH.UseVisualStyleBackColor = false;
+            this.btnDSKH.Click += new System.EventHandler(this.btnDSKH_Click);
             // 
             // dgvDDH
             // 

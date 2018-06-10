@@ -305,5 +305,13 @@ namespace BanDienThoai.Views
                 HienThi();
             }
         }
+
+        private void btnDSKH_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmKhachHang KH = new frmKhachHang();
+            KH.ShowDialog();
+            this.Show();
+        }
     }
 }

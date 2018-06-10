@@ -59,8 +59,6 @@
             this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtTrangThai = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
             this.txtBH = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.txtCamTrc = new System.Windows.Forms.TextBox();
@@ -368,8 +366,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtTrangThai);
-            this.groupBox1.Controls.Add(this.label18);
             this.groupBox1.Controls.Add(this.txtBH);
             this.groupBox1.Controls.Add(this.label17);
             this.groupBox1.Controls.Add(this.txtCamTrc);
@@ -406,27 +402,10 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(36, 119);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(323, 524);
+            this.groupBox1.Size = new System.Drawing.Size(323, 487);
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin sản phẩm";
-            // 
-            // txtTrangThai
-            // 
-            this.txtTrangThai.BackColor = System.Drawing.SystemColors.Window;
-            this.txtTrangThai.Location = new System.Drawing.Point(104, 478);
-            this.txtTrangThai.Name = "txtTrangThai";
-            this.txtTrangThai.Size = new System.Drawing.Size(177, 20);
-            this.txtTrangThai.TabIndex = 34;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(6, 481);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(59, 13);
-            this.label18.TabIndex = 30;
-            this.label18.Text = "Trạng Thái";
             // 
             // txtBH
             // 
@@ -819,8 +798,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtTrangThai;
-        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox txtBH;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txtCamTrc;
