@@ -48,7 +48,7 @@ namespace BanDienThoai.Helper
                 //Getting the location and file name of the excel to save from user.
                 SaveFileDialog saveDialog = new SaveFileDialog();
                 saveDialog.Filter = "Excel files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
-                saveDialog.FilterIndex = 2;
+                saveDialog.FilterIndex = 1;
 
                 if (saveDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {

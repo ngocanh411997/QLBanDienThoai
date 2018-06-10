@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnTaiKhoan = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnDoanhThu = new System.Windows.Forms.Button();
             this.btnHoaDonTT = new System.Windows.Forms.Button();
             this.btnPhieuYC = new System.Windows.Forms.Button();
             this.btnNhanVien = new System.Windows.Forms.Button();
@@ -61,7 +61,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnTaiKhoan);
-            this.groupBox2.Controls.Add(this.button2);
+            this.groupBox2.Controls.Add(this.btnDoanhThu);
             this.groupBox2.Controls.Add(this.btnHoaDonTT);
             this.groupBox2.Controls.Add(this.btnPhieuYC);
             this.groupBox2.Controls.Add(this.btnNhanVien);
@@ -87,20 +87,21 @@
             this.btnTaiKhoan.UseWaitCursor = true;
             this.btnTaiKhoan.Click += new System.EventHandler(this.btnTaiKhoan_Click);
             // 
-            // button2
+            // btnDoanhThu
             // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.button2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(131, 154);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(76, 92);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Doanh Thu";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.UseWaitCursor = true;
+            this.btnDoanhThu.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.btnDoanhThu.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.btnDoanhThu.Image = ((System.Drawing.Image)(resources.GetObject("btnDoanhThu.Image")));
+            this.btnDoanhThu.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnDoanhThu.Location = new System.Drawing.Point(131, 154);
+            this.btnDoanhThu.Name = "btnDoanhThu";
+            this.btnDoanhThu.Size = new System.Drawing.Size(76, 92);
+            this.btnDoanhThu.TabIndex = 5;
+            this.btnDoanhThu.Text = "Doanh Thu";
+            this.btnDoanhThu.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnDoanhThu.UseVisualStyleBackColor = true;
+            this.btnDoanhThu.UseWaitCursor = true;
+            this.btnDoanhThu.Click += new System.EventHandler(this.btnDoanhThu_Click);
             // 
             // btnHoaDonTT
             // 
@@ -278,7 +279,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnMon;
         private System.Windows.Forms.Button btnKhachHang;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnDoanhThu;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnNhaCC;
         private System.Windows.Forms.Button btnTaiKhoan;
