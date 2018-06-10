@@ -44,3 +44,26 @@ C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Cong Nghe Phan Mem\QLBanDienThoai\BanDienThoai
 C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Cong Nghe Phan Mem\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmTaiKhoan.resources
 C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Cong Nghe Phan Mem\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmThanhToan.resources
 C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Cong Nghe Phan Mem\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.csproj.GenerateResource.Cache
+D:\GitHub\QLBanDienThoai\BanDienThoai\BanDienThoai\bin\Debug\BanDienThoai.exe.config
+D:\GitHub\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.exe
+D:\GitHub\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.pdb
+D:\GitHub\QLBanDienThoai\BanDienThoai\BanDienThoai\bin\Debug\BanDienThoai.exe
+D:\GitHub\QLBanDienThoai\BanDienThoai\BanDienThoai\bin\Debug\BanDienThoai.pdb
+D:\GitHub\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.csprojResolveAssemblyReference.cache
+D:\GitHub\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Properties.Resources.resources
+D:\GitHub\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmChiTietDonDatHang.resources
+D:\GitHub\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmConnect.resources
+D:\GitHub\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmDanhMuc.resources
+D:\GitHub\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmDoanhThu.resources
+D:\GitHub\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmDonDatHang.resources
+D:\GitHub\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmHoaDonDaThanhToan.resources
+D:\GitHub\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmKhachHang.resources
+D:\GitHub\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmLogin.resources
+D:\GitHub\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmNhanVien.resources
+D:\GitHub\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmNhaSanXuat.resources
+D:\GitHub\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmNhiemVu.resources
+D:\GitHub\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmQLC.resources
+D:\GitHub\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmSanPham.resources
+D:\GitHub\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmTaiKhoan.resources
+D:\GitHub\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmThanhToan.resources
+D:\GitHub\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.csproj.GenerateResource.Cache

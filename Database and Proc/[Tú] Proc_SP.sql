@@ -1,8 +1,8 @@
 ﻿
-CREATE proc XemSP 
+Alter proc XemSP 
 as
 begin
-select * from tbl_sanpham
+select * from tbl_sanpham where TrangThai=0
 end
 go
 
@@ -31,10 +31,11 @@ where id=@id
 end
 go
 
-create proc XoaSP(@id nvarchar(50))
+ALter proc XoaSP(@id nvarchar(50))
 as
 begin
-delete tbl_sanpham
+update tbl_sanpham
+set TrangThai=1
 where id=@id
 end
 go
