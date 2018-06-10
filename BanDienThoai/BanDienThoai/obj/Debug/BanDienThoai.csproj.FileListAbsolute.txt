@@ -21,3 +21,26 @@ C:\Users\vuman\Desktop\Github\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug
 C:\Users\vuman\Desktop\Github\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmTaiKhoan.resources
 C:\Users\vuman\Desktop\Github\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmSanPham.resources
 C:\Users\vuman\Desktop\Github\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmDoanhThu.resources
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Cong Nghe Phan Mem\QLBanDienThoai\BanDienThoai\BanDienThoai\bin\Debug\BanDienThoai.exe.config
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Cong Nghe Phan Mem\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.exe
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Cong Nghe Phan Mem\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.pdb
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Cong Nghe Phan Mem\QLBanDienThoai\BanDienThoai\BanDienThoai\bin\Debug\BanDienThoai.exe
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Cong Nghe Phan Mem\QLBanDienThoai\BanDienThoai\BanDienThoai\bin\Debug\BanDienThoai.pdb
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Cong Nghe Phan Mem\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Cong Nghe Phan Mem\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Properties.Resources.resources
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Cong Nghe Phan Mem\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmChiTietDonDatHang.resources
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Cong Nghe Phan Mem\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmConnect.resources
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Cong Nghe Phan Mem\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmDanhMuc.resources
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Cong Nghe Phan Mem\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmDoanhThu.resources
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Cong Nghe Phan Mem\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmDonDatHang.resources
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Cong Nghe Phan Mem\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmHoaDonDaThanhToan.resources
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Cong Nghe Phan Mem\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmKhachHang.resources
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Cong Nghe Phan Mem\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmLogin.resources
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Cong Nghe Phan Mem\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmNhanVien.resources
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Cong Nghe Phan Mem\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmNhaSanXuat.resources
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Cong Nghe Phan Mem\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmNhiemVu.resources
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Cong Nghe Phan Mem\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmQLC.resources
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Cong Nghe Phan Mem\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmSanPham.resources
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Cong Nghe Phan Mem\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmTaiKhoan.resources
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Cong Nghe Phan Mem\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmThanhToan.resources
+C:\Users\ADMIN\Desktop\Ki 2 Nam 3\Cong Nghe Phan Mem\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.csproj.GenerateResource.Cache
