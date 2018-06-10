@@ -221,6 +221,7 @@
             this.btnMon.Text = "Sản phẩm";
             this.btnMon.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMon.UseVisualStyleBackColor = true;
+            this.btnMon.Click += new System.EventHandler(this.btnMon_Click);
             // 
             // btnKhachHang
             // 
