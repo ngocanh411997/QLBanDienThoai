@@ -25,7 +25,7 @@ namespace BanDienThoai.Entity
         public int BaoHanh { get; set; }
         public float Bluetooth { get; set; }
         public int id_NSX { get; set; }
-        public String TrangThai { get; set; }
+        public string TrangThai { get; set; }
 
         public EntitySanPham()
         {
