@@ -249,3 +249,21 @@ BEGIN
 	WHERE id_tinhtrang=1 AND tbl_dondathang.id LIKE ''
 	GROUP BY tbl_dondathang.id,ten,id_nguoilap,ngaylap
 END
+---
+
+SELECT ten,tbl_chitietdonhang.soluong,gia,thanhtien FROM dbo.tbl_chitietdonhang INNER JOIN dbo.tbl_sanpham ON tbl_sanpham.id = tbl_chitietdonhang.id_sanpham WHERE id_dondathang LIKE'' AND TrangThai=0
+
+GO
+SELECT tbl_dondathang.id,id_nguoilap,ngaylap,id_khachhang,ten,SUM(thanhtien) AS TongTien FROM dbo.tbl_khachhang INNER JOIN dbo.tbl_dondathang ON tbl_dondathang.id_khachhang = tbl_khachhang.id INNER JOIN dbo.tbl_chitietdonhang ON tbl_chitietdonhang.id_dondathang = tbl_dondathang.id WHERE id_dondathang LIKE'DDH01' GROUP BY tbl_dondathang.id,id_nguoilap,ngaylap,id_khachhang,ten
+-----------
+GO
+CREATE PROC Sellect_All_DM
+AS
+BEGIN
+	SELECT * FROM dbo.tbl_danhmuc
+END
+--
+GO
+SELECT tbl_sanpham.id,tbl_sanpham.ten FROM dbo.tbl_sanpham INNER JOIN dbo.tbl_danhmuc ON tbl_danhmuc.id = tbl_sanpham.id_danhmuc WHERE tbl_danhmuc.ten LIKE'' AND TrangThai=0
+--
+SELECT * FROM dbo.tbl_sanpham WHERE ten NOT IN (SELECT ten FROM dbo.tbl_chitietdonhang INNER JOIN dbo.tbl_sanpham ON tbl_sanpham.id = tbl_chitietdonhang.id_sanpham INNER JOIN dbo.tbl_danhmuc ON tbl_danhmuc.id = tbl_sanpham.id_danhmuc WHERE id_dondathang LIKE 'DDH01' AND tbl_danhmuc.ten LIKE'') AND TrangThai=0
