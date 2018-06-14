@@ -56,7 +56,7 @@ namespace BanDienThoai.Views
         }
         private void Clear()
         {
-            txtID.Text = "";
+           // txtID.Text = "";
             txtIDKM.Text = "";
             txtIDDM.Text = "";
 
@@ -95,8 +95,9 @@ namespace BanDienThoai.Views
         private void btnThem_Click(object sender, EventArgs e)
         {
             HD = 0;
-
+            txtID.Text = Bus.TangMa();
             DisEnl(true);
+            txtID.Enabled = false;
             btnThoat.Enabled = true;
             btnThem.Enabled = true;
             Clear();
@@ -279,25 +280,49 @@ namespace BanDienThoai.Views
 
         private void dgvSanPham_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtID.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["id"].Value);
-            txtIDKM.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["id_khuyenmai"].Value);
-            txtIDDM.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["id_danhmuc"].Value);
+            if(HD==0)
+            {
+                txtIDKM.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["id_khuyenmai"].Value);
+                txtIDDM.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["id_danhmuc"].Value);
 
-            txttenSP.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["ten"].Value);
-            txtLinkAnh.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["link_anh"].Value);
-            txtGia.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["gia"].Value);
-            txtSL.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["SoLuong"].Value);
-            txtTrongLg.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["TrongLuong"].Value);
-            txtROM.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["ROM"].Value);
-            txtRAM.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["RAM"].Value);
-            txtTheNho.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["thenho"].Value);
-            txtCamTrc.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["camera_truoc"].Value);
-            txtCamSau.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["camera_sau"].Value);
-            txtPin.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["pin"].Value);
-            txtBH.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["baohanh"].Value);
-            txtBluetooth.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["bluetooth"].Value);
-            txtIDNSX.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["id_nhasanxuat"].Value);
-            
+                txttenSP.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["ten"].Value);
+                txtLinkAnh.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["link_anh"].Value);
+                txtGia.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["gia"].Value);
+                txtSL.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["SoLuong"].Value);
+                txtTrongLg.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["TrongLuong"].Value);
+                txtROM.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["ROM"].Value);
+                txtRAM.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["RAM"].Value);
+                txtTheNho.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["thenho"].Value);
+                txtCamTrc.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["camera_truoc"].Value);
+                txtCamSau.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["camera_sau"].Value);
+                txtPin.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["pin"].Value);
+                txtBH.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["baohanh"].Value);
+                txtBluetooth.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["bluetooth"].Value);
+                txtIDNSX.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["id_nhasanxuat"].Value);
+            }
+            else
+            {
+                txtID.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["id"].Value);
+                txtIDKM.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["id_khuyenmai"].Value);
+                txtIDDM.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["id_danhmuc"].Value);
+
+                txttenSP.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["ten"].Value);
+                txtLinkAnh.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["link_anh"].Value);
+                txtGia.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["gia"].Value);
+                txtSL.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["SoLuong"].Value);
+                txtTrongLg.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["TrongLuong"].Value);
+                txtROM.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["ROM"].Value);
+                txtRAM.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["RAM"].Value);
+                txtTheNho.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["thenho"].Value);
+                txtCamTrc.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["camera_truoc"].Value);
+                txtCamSau.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["camera_sau"].Value);
+                txtPin.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["pin"].Value);
+                txtBH.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["baohanh"].Value);
+                txtBluetooth.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["bluetooth"].Value);
+                txtIDNSX.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["id_nhasanxuat"].Value);
+
+            }
+
         }
 
        

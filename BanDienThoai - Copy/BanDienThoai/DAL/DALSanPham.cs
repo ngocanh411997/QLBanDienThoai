@@ -86,6 +86,10 @@ namespace BanDienThoai.DAL
         {
             return conn.GetDataStr(Ten);
         }
+        public string TangMa()
+        {
+            return conn.TangMa("SELECT * from tbl_sanpham", "SP");
+        }
 
     }
 }

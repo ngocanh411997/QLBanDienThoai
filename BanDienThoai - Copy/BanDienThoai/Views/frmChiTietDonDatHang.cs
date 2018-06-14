@@ -38,15 +38,16 @@ namespace BanDienThoai.Views
         public void ShowSP()
         {
             DataTable dt = new DataTable();
-            dt = Bus.GetListSanPham("SELECT tbl_sanpham.id,tbl_sanpham.ten FROM dbo.tbl_sanpham INNER JOIN dbo.tbl_danhmuc ON tbl_danhmuc.id = tbl_sanpham.id_danhmuc WHERE tbl_danhmuc.id LIKE'"+cbDM.SelectedValue.ToString()+ "' AND TrangThai=0");
+            dt = Bus.GetListSanPham("SELECT tbl_sanpham.id,tbl_sanpham.ten FROM dbo.tbl_sanpham INNER JOIN dbo.tbl_danhmuc ON tbl_danhmuc.id = tbl_sanpham.id_danhmuc WHERE tbl_danhmuc.id LIKE'" + cbDM.SelectedValue.ToString() + "' AND TrangThai=0");
             cbSanPham.DataSource = dt;
             cbSanPham.DisplayMember = "ten";
             cbSanPham.ValueMember = "id";
+          
         }
         public void ShowThemSP()
         {
             DataTable dt = new DataTable();
-            dt = Bus.GetListSP("SELECT * FROM dbo.tbl_sanpham WHERE ten NOT IN (SELECT ten FROM dbo.tbl_chitietdonhang INNER JOIN dbo.tbl_sanpham ON tbl_sanpham.id = tbl_chitietdonhang.id_sanpham INNER JOIN dbo.tbl_danhmuc ON tbl_danhmuc.id = tbl_sanpham.id_danhmuc WHERE id_dondathang LIKE '"+txtMaDon.Text+"' AND tbl_danhmuc.id LIKE'"+cbDM.SelectedValue.ToString()+"') AND TrangThai=0");
+            dt = Bus.GetListSP("SELECT * FROM dbo.tbl_sanpham  WHERE ten NOT IN (SELECT tbl_sanpham.ten FROM dbo.tbl_chitietdonhang INNER JOIN dbo.tbl_sanpham ON tbl_sanpham.id = tbl_chitietdonhang.id_sanpham INNER JOIN dbo.tbl_danhmuc ON tbl_danhmuc.id = tbl_sanpham.id_danhmuc WHERE id_dondathang LIKE '"+txtMaDon.Text+"') AND TrangThai=0 AND id_danhmuc LIKE'"+cbDM.SelectedValue.ToString()+"'");
             cbSanPham.DataSource = dt;
             cbSanPham.DisplayMember = "ten";
             cbSanPham.ValueMember = "id";
@@ -60,6 +61,7 @@ namespace BanDienThoai.Views
             btnHuy.Enabled = e;
             txtSoLuong.Enabled = e;
             cbSanPham.Enabled = e;
+            cbDM.Enabled = e;
 
         }
         private void HienThi()
@@ -68,16 +70,15 @@ namespace BanDienThoai.Views
             dgvChiTietDDH.DataSource = Bus.DataCTDDH("SELECT id_dondathang,ten,tbl_chitietdonhang.soluong,gia,thanhtien FROM dbo.tbl_chitietdonhang INNER JOIN dbo.tbl_sanpham ON tbl_sanpham.id = tbl_chitietdonhang.id_sanpham WHERE TrangThai=0 and id_dondathang like '"+txtMaDon.Text+"'");
             txtMaDon.Enabled = false;
             ShowDM();
-            ShowThemSP();
-            ShowSP();
+            ShowSP();       
         }
-
         private void btnThemCT_Click(object sender, EventArgs e)
         {
             fluu = 0;
             DisEnl(true);
             txtMaDon.Enabled = false;
             ShowThemSP();
+           
         }
 
         private void btnSuaCT_Click(object sender, EventArgs e)
@@ -86,6 +87,7 @@ namespace BanDienThoai.Views
             DisEnl(true);
             txtMaDon.Enabled = false;
             cbSanPham.Enabled = false;
+        
         }
     
 
@@ -140,6 +142,7 @@ namespace BanDienThoai.Views
                     MessageBox.Show("Thêm thành công!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     HienThi();
                     frmChiTietDonDatHang_Load(sender, e);
+                   
                     DisEnl(false);
                     fluu = 1;
                 }
@@ -156,6 +159,7 @@ namespace BanDienThoai.Views
                     MessageBox.Show("Sửa Thành Công ! ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     HienThi();
                     frmChiTietDonDatHang_Load(sender, e);
+                    
                     DisEnl(false);
                 }
                 catch (Exception ex)
@@ -199,7 +203,10 @@ namespace BanDienThoai.Views
 
         private void btnDSSP_Click(object sender, EventArgs e)
         {
-            // frmSanPham
+            this.Hide();
+            frmSanPham SP = new frmSanPham();
+            SP.ShowDialog();
+            this.Show();
         }
 
         private void frmChiTietDonDatHang_Load(object sender, EventArgs e)
@@ -228,6 +235,12 @@ namespace BanDienThoai.Views
         private void dgvChiTietDDH_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
         {
             dgvChiTietDDH.Rows[e.RowIndex].Cells["STT"].Value = e.RowIndex + 1;
+        }
+
+        private void cbDM_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ShowSP();
+            ShowThemSP();
         }
     }
 }

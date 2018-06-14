@@ -263,7 +263,5 @@ BEGIN
 	SELECT * FROM dbo.tbl_danhmuc
 END
 --
-GO
-SELECT tbl_sanpham.id,tbl_sanpham.ten FROM dbo.tbl_sanpham INNER JOIN dbo.tbl_danhmuc ON tbl_danhmuc.id = tbl_sanpham.id_danhmuc WHERE tbl_danhmuc.ten LIKE'' AND TrangThai=0
---
-SELECT * FROM dbo.tbl_sanpham WHERE ten NOT IN (SELECT ten FROM dbo.tbl_chitietdonhang INNER JOIN dbo.tbl_sanpham ON tbl_sanpham.id = tbl_chitietdonhang.id_sanpham INNER JOIN dbo.tbl_danhmuc ON tbl_danhmuc.id = tbl_sanpham.id_danhmuc WHERE id_dondathang LIKE 'DDH01' AND tbl_danhmuc.ten LIKE'') AND TrangThai=0
+
+

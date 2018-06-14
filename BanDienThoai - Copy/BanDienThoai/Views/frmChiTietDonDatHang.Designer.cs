@@ -47,6 +47,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.cbDM = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.dgvChiTietDDH = new System.Windows.Forms.DataGridView();
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_dondathang = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,8 +57,6 @@
             this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.thanhtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cbDM = new System.Windows.Forms.ComboBox();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietDDH)).BeginInit();
@@ -256,6 +256,24 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Nhập Thông Chi Tiết Phiếu Yêu Cầu";
             // 
+            // cbDM
+            // 
+            this.cbDM.FormattingEnabled = true;
+            this.cbDM.Location = new System.Drawing.Point(83, 57);
+            this.cbDM.Name = "cbDM";
+            this.cbDM.Size = new System.Drawing.Size(156, 21);
+            this.cbDM.TabIndex = 9;
+            this.cbDM.SelectedIndexChanged += new System.EventHandler(this.cbDM_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(10, 57);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(27, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Loại";
+            // 
             // dgvChiTietDDH
             // 
             this.dgvChiTietDDH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -334,23 +352,6 @@
             this.groupBox7.TabIndex = 25;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Chi Tiết Phiếu Yêu Cầu";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 57);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(27, 13);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Loại";
-            // 
-            // cbDM
-            // 
-            this.cbDM.FormattingEnabled = true;
-            this.cbDM.Location = new System.Drawing.Point(83, 57);
-            this.cbDM.Name = "cbDM";
-            this.cbDM.Size = new System.Drawing.Size(156, 21);
-            this.cbDM.TabIndex = 9;
             // 
             // frmChiTietDonDatHang
             // 

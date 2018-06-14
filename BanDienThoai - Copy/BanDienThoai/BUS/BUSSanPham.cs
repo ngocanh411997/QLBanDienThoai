@@ -36,6 +36,10 @@ namespace BanDienThoai.BUS
         {
             return da.TimKiemTen(sql);
         }
+        public string TangMa()
+        {
+            return da.TangMa();
+        }
 
     }
 }

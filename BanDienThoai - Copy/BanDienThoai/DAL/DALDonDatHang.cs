@@ -155,7 +155,7 @@ namespace BanDienThoai.DAL
         //
         public DataTable GetListDM()
         {
-            return conn.GetDataProc("Sellect_All_DM ", null);
+            return conn.GetDataProc("Sellect_All_DM", null);
         }
     }
 }
