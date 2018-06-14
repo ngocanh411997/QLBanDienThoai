@@ -100,7 +100,7 @@
             this.btnLuuCT.Name = "btnLuuCT";
             this.btnLuuCT.Size = new System.Drawing.Size(51, 53);
             this.btnLuuCT.TabIndex = 3;
-            this.btnLuuCT.Text = "Lưu Món";
+            this.btnLuuCT.Text = "Lưu";
             this.btnLuuCT.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnLuuCT.UseVisualStyleBackColor = false;
             this.btnLuuCT.Click += new System.EventHandler(this.btnLuuCT_Click);
@@ -114,7 +114,7 @@
             this.btnXoaCT.Name = "btnXoaCT";
             this.btnXoaCT.Size = new System.Drawing.Size(51, 53);
             this.btnXoaCT.TabIndex = 2;
-            this.btnXoaCT.Text = "Xóa Món";
+            this.btnXoaCT.Text = "Xóa";
             this.btnXoaCT.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnXoaCT.UseVisualStyleBackColor = false;
             this.btnXoaCT.Click += new System.EventHandler(this.btnXoaCT_Click);
@@ -142,7 +142,7 @@
             this.btnSuaCT.Name = "btnSuaCT";
             this.btnSuaCT.Size = new System.Drawing.Size(51, 53);
             this.btnSuaCT.TabIndex = 1;
-            this.btnSuaCT.Text = "Sửa Món";
+            this.btnSuaCT.Text = "Sửa ";
             this.btnSuaCT.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSuaCT.UseVisualStyleBackColor = false;
             this.btnSuaCT.Click += new System.EventHandler(this.btnSuaCT_Click);
@@ -156,7 +156,7 @@
             this.btnThemCT.Name = "btnThemCT";
             this.btnThemCT.Size = new System.Drawing.Size(51, 53);
             this.btnThemCT.TabIndex = 0;
-            this.btnThemCT.Text = "Thêm Món";
+            this.btnThemCT.Text = "Thêm";
             this.btnThemCT.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnThemCT.UseVisualStyleBackColor = false;
             this.btnThemCT.Click += new System.EventHandler(this.btnThemCT_Click);
