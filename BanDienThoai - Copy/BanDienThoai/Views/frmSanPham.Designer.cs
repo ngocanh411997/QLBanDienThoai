@@ -62,7 +62,6 @@
             this.txtBH = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.txtCamTrc = new System.Windows.Forms.TextBox();
-            this.txtIDNSX = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.txtBluetooth = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -88,7 +87,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtGia = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtIDDM = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtIDKM = new System.Windows.Forms.TextBox();
             this.txtID = new System.Windows.Forms.TextBox();
@@ -96,6 +94,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnRef = new System.Windows.Forms.Button();
+            this.cboDM = new System.Windows.Forms.ComboBox();
+            this.cboNSX = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -366,11 +366,14 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cboNSX);
+            this.groupBox1.Controls.Add(this.cboDM);
             this.groupBox1.Controls.Add(this.txtBH);
             this.groupBox1.Controls.Add(this.label17);
             this.groupBox1.Controls.Add(this.txtCamTrc);
-            this.groupBox1.Controls.Add(this.txtIDNSX);
             this.groupBox1.Controls.Add(this.label19);
+            this.groupBox1.Controls.Add(this.txtIDKM);
+            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.txtBluetooth);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.txtRAM);
@@ -395,9 +398,6 @@
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.txtGia);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.txtIDDM);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.txtIDKM);
             this.groupBox1.Controls.Add(this.txtID);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(36, 119);
@@ -433,22 +433,14 @@
             this.txtCamTrc.Size = new System.Drawing.Size(177, 20);
             this.txtCamTrc.TabIndex = 36;
             // 
-            // txtIDNSX
-            // 
-            this.txtIDNSX.BackColor = System.Drawing.Color.Beige;
-            this.txtIDNSX.Location = new System.Drawing.Point(104, 450);
-            this.txtIDNSX.Name = "txtIDNSX";
-            this.txtIDNSX.Size = new System.Drawing.Size(177, 20);
-            this.txtIDNSX.TabIndex = 26;
-            // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Location = new System.Drawing.Point(6, 457);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(43, 13);
+            this.label19.Size = new System.Drawing.Size(29, 13);
             this.label19.TabIndex = 22;
-            this.label19.Text = "ID NSX";
+            this.label19.Text = "NSX";
             // 
             // txtBluetooth
             // 
@@ -505,7 +497,7 @@
             // txttenSP
             // 
             this.txttenSP.BackColor = System.Drawing.SystemColors.Window;
-            this.txttenSP.Location = new System.Drawing.Point(104, 106);
+            this.txttenSP.Location = new System.Drawing.Point(104, 54);
             this.txttenSP.Name = "txttenSP";
             this.txttenSP.Size = new System.Drawing.Size(177, 20);
             this.txttenSP.TabIndex = 5;
@@ -513,7 +505,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 109);
+            this.label4.Location = new System.Drawing.Point(6, 57);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 13);
             this.label4.TabIndex = 4;
@@ -657,22 +649,14 @@
             this.label6.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label6.Location = new System.Drawing.Point(6, 83);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 13);
+            this.label6.Size = new System.Drawing.Size(57, 13);
             this.label6.TabIndex = 10;
-            this.label6.Text = "ID Danh Mục";
-            // 
-            // txtIDDM
-            // 
-            this.txtIDDM.BackColor = System.Drawing.Color.Beige;
-            this.txtIDDM.Location = new System.Drawing.Point(104, 80);
-            this.txtIDDM.Name = "txtIDDM";
-            this.txtIDDM.Size = new System.Drawing.Size(177, 20);
-            this.txtIDDM.TabIndex = 11;
+            this.label6.Text = "Danh Mục";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 57);
+            this.label5.Location = new System.Drawing.Point(6, 109);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(77, 13);
             this.label5.TabIndex = 8;
@@ -680,7 +664,7 @@
             // 
             // txtIDKM
             // 
-            this.txtIDKM.Location = new System.Drawing.Point(104, 54);
+            this.txtIDKM.Location = new System.Drawing.Point(104, 106);
             this.txtIDKM.Name = "txtIDKM";
             this.txtIDKM.Size = new System.Drawing.Size(177, 20);
             this.txtIDKM.TabIndex = 9;
@@ -742,6 +726,22 @@
             this.btnRef.UseVisualStyleBackColor = true;
             this.btnRef.Click += new System.EventHandler(this.btnRef_Click);
             // 
+            // cboDM
+            // 
+            this.cboDM.FormattingEnabled = true;
+            this.cboDM.Location = new System.Drawing.Point(104, 79);
+            this.cboDM.Name = "cboDM";
+            this.cboDM.Size = new System.Drawing.Size(177, 21);
+            this.cboDM.TabIndex = 38;
+            // 
+            // cboNSX
+            // 
+            this.cboNSX.FormattingEnabled = true;
+            this.cboNSX.Location = new System.Drawing.Point(104, 454);
+            this.cboNSX.Name = "cboNSX";
+            this.cboNSX.Size = new System.Drawing.Size(177, 21);
+            this.cboNSX.TabIndex = 39;
+            // 
             // frmSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -801,7 +801,6 @@
         private System.Windows.Forms.TextBox txtBH;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txtCamTrc;
-        private System.Windows.Forms.TextBox txtIDNSX;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox txtBluetooth;
         private System.Windows.Forms.Label label14;
@@ -827,7 +826,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtGia;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtIDDM;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtIDKM;
         private System.Windows.Forms.TextBox txtID;
@@ -835,5 +833,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button btnRef;
+        private System.Windows.Forms.ComboBox cboDM;
+        private System.Windows.Forms.ComboBox cboNSX;
     }
 }

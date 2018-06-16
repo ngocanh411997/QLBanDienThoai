@@ -90,6 +90,13 @@ namespace BanDienThoai.DAL
         {
             return conn.TangMa("SELECT * from tbl_sanpham", "SP");
         }
-
+        public DataTable GetListDanhMuc()
+        {
+            return conn.GetDataProc("XemDM ", null);
+        }
+        public DataTable GetListNhaSX()
+        {
+            return conn.GetDataProc("XemNSX", null);
+        }
     }
 }

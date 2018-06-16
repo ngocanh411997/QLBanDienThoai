@@ -36,7 +36,7 @@ namespace BanDienThoai.Views
 
             txtID.Enabled = e;
             txtIDKM.Enabled = e;
-            txtIDDM.Enabled = e;
+            cboDM.Enabled = e;
 
             txttenSP.Enabled = e;
             txtLinkAnh.Enabled = e;
@@ -51,14 +51,14 @@ namespace BanDienThoai.Views
             txtPin.Enabled = e;
             txtBH.Enabled = e;
             txtBluetooth.Enabled = e;
-            txtIDNSX.Enabled = e;
+            cboNSX.Enabled = e;
            
         }
         private void Clear()
         {
            // txtID.Text = "";
             txtIDKM.Text = "";
-            txtIDDM.Text = "";
+            cboDM.Text = "";
 
             txttenSP.Text = "";
             txtLinkAnh.Text = "";
@@ -73,15 +73,31 @@ namespace BanDienThoai.Views
             txtPin.Text = "";
             txtBH.Text = "";
             txtBluetooth.Text = "";
-            txtIDNSX.Text = "";
+            cboNSX.Text = "";
            
         }
-
+        public void ShowDM()
+        {
+            DataTable dt = new DataTable();
+            dt = Bus.GetListDM();
+            cboDM.DataSource = dt;
+            cboDM.DisplayMember = "ten";
+            cboDM.ValueMember = "id";
+        }
+        public void ShowNSX()
+        {
+            DataTable dt = new DataTable();
+            dt = Bus.GetListNSX();
+            cboNSX.DataSource = dt;
+            cboNSX.DisplayMember = "ten";
+            cboNSX.ValueMember = "id";
+        }
         private void HienThi()
         {
             dgvSanPham.DataSource = Bus.GetDataProc();
             dgvSanPham.AutoResizeColumns();
-
+            ShowDM();
+            ShowNSX();
         }
 
         private void frmSanPham_Load(object sender, EventArgs e)
@@ -119,7 +135,7 @@ namespace BanDienThoai.Views
             {
                 MessageBox.Show("Bạn chưa nhập mã SP! ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            if (txtIDNSX.Text == "")
+            if (cboNSX.Text == "")
             {
                 MessageBox.Show("Bạn chưa nhập id NSX! ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -139,7 +155,7 @@ namespace BanDienThoai.Views
 
 
             int _id_NSX;
-            int.TryParse(txtIDNSX.Text, out _id_NSX);
+            int.TryParse(cboNSX.SelectedValue.ToString(), out _id_NSX);
             int _BaoHanh;
             int.TryParse(txtBH.Text, out _BaoHanh);
             int _Gia;
@@ -147,7 +163,7 @@ namespace BanDienThoai.Views
             int _id_KM;
             int.TryParse(txtIDKM.Text, out _id_KM);
             int _id_DM;
-            int.TryParse(txtIDDM.Text, out _id_DM);
+            int.TryParse(cboDM.SelectedValue.ToString(), out _id_DM);
             int _Soluong;
             int.TryParse(txtSL.Text, out _Soluong);
             int _Trongluong;
@@ -189,7 +205,7 @@ namespace BanDienThoai.Views
 
 
 
-            if (txtID.Text != "" && txtIDNSX.Text != "" && txttenSP.Text != "" && txtBH.Text != "" && txtGia.Text != "" && HD == 0)
+            if (txtID.Text != "" && cboNSX.Text != "" && txttenSP.Text != "" && txtBH.Text != "" && txtGia.Text != "" && HD == 0)
             {
                 try
                 {
@@ -209,7 +225,7 @@ namespace BanDienThoai.Views
                     MessageBox.Show("Lỗi" + ex.Message);
                 }
             }
-            else if (txtID.Text != "" && txtIDNSX.Text != "" && txttenSP.Text != "" && txtBH.Text != "" && txtGia.Text != "" && HD == 1)
+            else if (txtID.Text != "" && cboNSX.Text != "" && txttenSP.Text != "" && txtBH.Text != "" && txtGia.Text != "" && HD == 1)
             {
                 try
                 {
@@ -283,7 +299,7 @@ namespace BanDienThoai.Views
             if(HD==0)
             {
                 txtIDKM.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["id_khuyenmai"].Value);
-                txtIDDM.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["id_danhmuc"].Value);
+                cboDM.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["id_danhmuc"].Value);
 
                 txttenSP.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["ten"].Value);
                 txtLinkAnh.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["link_anh"].Value);
@@ -298,13 +314,13 @@ namespace BanDienThoai.Views
                 txtPin.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["pin"].Value);
                 txtBH.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["baohanh"].Value);
                 txtBluetooth.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["bluetooth"].Value);
-                txtIDNSX.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["id_nhasanxuat"].Value);
+                cboNSX.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["id_nhasanxuat"].Value);
             }
             else
             {
                 txtID.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["id"].Value);
                 txtIDKM.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["id_khuyenmai"].Value);
-                txtIDDM.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["id_danhmuc"].Value);
+                cboDM.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["id_danhmuc"].Value);
 
                 txttenSP.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["ten"].Value);
                 txtLinkAnh.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["link_anh"].Value);
@@ -319,7 +335,7 @@ namespace BanDienThoai.Views
                 txtPin.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["pin"].Value);
                 txtBH.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["baohanh"].Value);
                 txtBluetooth.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["bluetooth"].Value);
-                txtIDNSX.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["id_nhasanxuat"].Value);
+                cboNSX.Text = Convert.ToString(dgvSanPham.CurrentRow.Cells["id_nhasanxuat"].Value);
 
             }
 

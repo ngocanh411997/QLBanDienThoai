@@ -36,6 +36,17 @@ namespace BanDienThoai.BUS
         {
             return da.TimKiemTen(sql);
         }
-
+        public DataTable GetListDM()
+        {
+            return da.GetListDanhMuc();
+        }
+        public DataTable GetListNSX()
+        {
+            return da.GetListNhaSX();
+        }
+        public string TangMa()
+        {
+            return da.TangMa();
+        }
     }
 }

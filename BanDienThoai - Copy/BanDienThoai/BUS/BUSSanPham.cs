@@ -40,6 +40,13 @@ namespace BanDienThoai.BUS
         {
             return da.TangMa();
         }
-
+        public DataTable GetListDM()
+        {
+            return da.GetListDanhMuc();
+        }
+        public DataTable GetListNSX()
+        {
+            return da.GetListNhaSX();
+        }
     }
 }

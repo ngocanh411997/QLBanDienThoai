@@ -42,3 +42,16 @@ where id=@id
 end
 go
 
+create proc XemDM
+as
+begin
+select id, ten from tbl_danhmuc
+end
+go
+
+create proc XemNSX
+as
+begin
+select id, ten from tbl_nhasanxuat
+end
+go
