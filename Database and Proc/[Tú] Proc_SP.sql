@@ -1,12 +1,12 @@
 ﻿
-ALTER proc XemSP 
+create proc XemSP 
 as
 begin
 select id,id_khuyenmai,id_danhmuc,ten,link_anh,gia,soluong,trongluong,ROM,RAM,thenho,camera_truoc,camera_sau,pin,baohanh,bluetooth,id_nhasanxuat from tbl_sanpham where TrangThai='0'
 end
 go
 
-ALTER proc ThemSP(@id VARCHAR(50), @id_KM int, @id_DM int, @ten nvarchar(150), @linkanh nvarchar(150), @gia DECIMAL,
+create proc ThemSP(@id VARCHAR(50), @id_KM int, @id_DM int, @ten nvarchar(150), @linkanh nvarchar(150), @gia DECIMAL,
 @SoLg int, @trongLg int, @ROM int, @RAM int, @thenho int, @CamTrc int, @CamSau int, @pin int, @BaoHanh int, @Bluetooth float,
 @idNSX int, @TrangThai VARCHAR(2))
 as
@@ -18,7 +18,7 @@ insert into tbl_sanpham(id, id_khuyenmai, id_danhmuc, ten, link_anh, gia, soluon
 end
 go
 
-ALTER proc SuaSP(@id VARCHAR(50), @id_KM int, @id_DM int, @ten nvarchar(150), @linkanh nvarchar(150), @gia DECIMAL,
+create proc SuaSP(@id VARCHAR(50), @id_KM int, @id_DM int, @ten nvarchar(150), @linkanh nvarchar(150), @gia DECIMAL,
 @SoLg int, @trongLg int, @ROM int, @RAM int, @thenho int, @CamTrc int, @CamSau int, @pin int, @BaoHanh int, @Bluetooth float,
 @idNSX int, @TrangThai VARCHAR(2))
 as

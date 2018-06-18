@@ -90,3 +90,6 @@ C:\Users\NgocAnh\Documents\GitHub\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\D
 C:\Users\NgocAnh\Documents\GitHub\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmTaiKhoan.resources
 C:\Users\NgocAnh\Documents\GitHub\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.Views.frmThanhToan.resources
 C:\Users\NgocAnh\Documents\GitHub\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.csproj.GenerateResource.Cache
+D:\Năm3moi\QLBanDienThoai\BanDienThoai\BanDienThoai\bin\Debug\BanDienThoai.exe.config
+D:\Năm3moi\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.exe
+D:\Năm3moi\QLBanDienThoai\BanDienThoai\BanDienThoai\obj\Debug\BanDienThoai.pdb

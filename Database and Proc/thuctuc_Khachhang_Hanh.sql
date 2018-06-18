@@ -8,7 +8,7 @@ select *
  end
  --thêm KH
  GO
-CREATE PROC ThemKH(@id VARCHAR(50), @ten NVARCHAR(50), @sdt DECIMAL(18,0),@diachi nvarchar(200), @email VARCHAR(100))
+alter PROC ThemKH(@id VARCHAR(50), @ten NVARCHAR(50), @sdt DECIMAL(18,0),@diachi nvarchar(200), @email VARCHAR(100))
 AS
 BEGIN
 	INSERT INTO tbl_khachhang
@@ -18,7 +18,7 @@ BEGIN
 	          email ,
 	          diachi
 	        )
-	VALUES  ( @id,@ten,@sdt,@diachi,@email)
+	VALUES  ( @id,@ten,@sdt,@email,@diachi)
 END
 -- Sửa KH
 GO
