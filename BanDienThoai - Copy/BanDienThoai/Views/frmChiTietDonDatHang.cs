@@ -67,7 +67,7 @@ namespace BanDienThoai.Views
         private void HienThi()
         {
             txtMaDon.Text = ma;
-            dgvChiTietDDH.DataSource = Bus.DataCTDDH("SELECT id_dondathang,ten,tbl_chitietdonhang.soluong,gia,thanhtien FROM dbo.tbl_chitietdonhang INNER JOIN dbo.tbl_sanpham ON tbl_sanpham.id = tbl_chitietdonhang.id_sanpham WHERE TrangThai=0 and id_dondathang like '"+txtMaDon.Text+"'");
+            dgvChiTietDDH.DataSource = Bus.DataCTDDH("SELECT id_dondathang,tbl_sanpham.ten,tbl_danhmuc.ten AS TEN1,tbl_chitietdonhang.soluong,gia,thanhtien FROM dbo.tbl_chitietdonhang INNER JOIN dbo.tbl_sanpham ON tbl_sanpham.id = tbl_chitietdonhang.id_sanpham INNER JOIN dbo.tbl_danhmuc ON tbl_danhmuc.id = tbl_sanpham.id_danhmuc WHERE TrangThai=0 and id_dondathang like '"+txtMaDon.Text+"'");
             txtMaDon.Enabled = false;
             ShowDM();
             ShowSP();       
@@ -77,8 +77,7 @@ namespace BanDienThoai.Views
             fluu = 0;
             DisEnl(true);
             txtMaDon.Enabled = false;
-            ShowThemSP();
-           
+            ShowThemSP();  
         }
 
         private void btnSuaCT_Click(object sender, EventArgs e)
@@ -218,8 +217,7 @@ namespace BanDienThoai.Views
         private void dgvChiTietDDH_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (fluu == 0)
-            {
-                //cbMonAn.Text = Convert.ToString(dgvChiTietPYC.CurrentRow.Cells["TENMON"].Value);
+            {               
                 txtSoLuong.Text = Convert.ToString(dgvChiTietDDH.CurrentRow.Cells["soluong"].Value);
 
             }
@@ -227,7 +225,7 @@ namespace BanDienThoai.Views
             {
                 cbSanPham.Text = Convert.ToString(dgvChiTietDDH.CurrentRow.Cells["ten"].Value);
                 txtSoLuong.Text = Convert.ToString(dgvChiTietDDH.CurrentRow.Cells["soluong"].Value);
-
+                cbDM.Text = Convert.ToString(dgvChiTietDDH.CurrentRow.Cells["Loai"].Value);
             }
 
         }

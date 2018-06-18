@@ -50,13 +50,14 @@
             this.cbDM = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvChiTietDDH = new System.Windows.Forms.DataGridView();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_dondathang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ten = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Loai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.thanhtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietDDH)).BeginInit();
@@ -68,7 +69,7 @@
             this.btnDSSP.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnDSSP.Image = ((System.Drawing.Image)(resources.GetObject("btnDSSP.Image")));
             this.btnDSSP.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnDSSP.Location = new System.Drawing.Point(69, 187);
+            this.btnDSSP.Location = new System.Drawing.Point(529, 112);
             this.btnDSSP.Name = "btnDSSP";
             this.btnDSSP.Size = new System.Drawing.Size(51, 53);
             this.btnDSSP.TabIndex = 28;
@@ -82,7 +83,7 @@
             this.btnThanhToan.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnThanhToan.Image = ((System.Drawing.Image)(resources.GetObject("btnThanhToan.Image")));
             this.btnThanhToan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnThanhToan.Location = new System.Drawing.Point(12, 187);
+            this.btnThanhToan.Location = new System.Drawing.Point(529, 53);
             this.btnThanhToan.Name = "btnThanhToan";
             this.btnThanhToan.Size = new System.Drawing.Size(51, 53);
             this.btnThanhToan.TabIndex = 26;
@@ -281,16 +282,29 @@
             this.STT,
             this.id_dondathang,
             this.ten,
+            this.Loai,
             this.soluong,
             this.Gia,
             this.thanhtien});
             this.dgvChiTietDDH.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvChiTietDDH.Location = new System.Drawing.Point(3, 16);
             this.dgvChiTietDDH.Name = "dgvChiTietDDH";
-            this.dgvChiTietDDH.Size = new System.Drawing.Size(508, 153);
+            this.dgvChiTietDDH.Size = new System.Drawing.Size(590, 131);
             this.dgvChiTietDDH.TabIndex = 0;
             this.dgvChiTietDDH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvChiTietDDH_CellClick);
             this.dgvChiTietDDH.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dgvChiTietDDH_RowPrePaint);
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox7.Controls.Add(this.dgvChiTietDDH);
+            this.groupBox7.Location = new System.Drawing.Point(12, 176);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(596, 150);
+            this.groupBox7.TabIndex = 25;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Chi Tiết Phiếu Yêu Cầu";
             // 
             // STT
             // 
@@ -315,6 +329,13 @@
             this.ten.Name = "ten";
             this.ten.Width = 90;
             // 
+            // Loai
+            // 
+            this.Loai.DataPropertyName = "TEN1";
+            this.Loai.Frozen = true;
+            this.Loai.HeaderText = "Loại";
+            this.Loai.Name = "Loai";
+            // 
             // soluong
             // 
             this.soluong.DataPropertyName = "soluong";
@@ -334,30 +355,18 @@
             // 
             // thanhtien
             // 
+            this.thanhtien.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.thanhtien.DataPropertyName = "thanhtien";
             dataGridViewCellStyle2.Format = "0,000";
             this.thanhtien.DefaultCellStyle = dataGridViewCellStyle2;
             this.thanhtien.HeaderText = "Thành tiền";
             this.thanhtien.Name = "thanhtien";
-            this.thanhtien.Width = 90;
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBox7.Controls.Add(this.dgvChiTietDDH);
-            this.groupBox7.Location = new System.Drawing.Point(12, 255);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(514, 172);
-            this.groupBox7.TabIndex = 25;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Chi Tiết Phiếu Yêu Cầu";
             // 
             // frmChiTietDonDatHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(541, 439);
+            this.ClientSize = new System.Drawing.Size(618, 338);
             this.Controls.Add(this.btnDSSP);
             this.Controls.Add(this.btnThanhToan);
             this.Controls.Add(this.groupBox5);
@@ -395,13 +404,14 @@
         private System.Windows.Forms.DataGridView dgvChiTietDDH;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.ComboBox cbDM;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn STT;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_dondathang;
         private System.Windows.Forms.DataGridViewTextBoxColumn ten;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Loai;
         private System.Windows.Forms.DataGridViewTextBoxColumn soluong;
         private System.Windows.Forms.DataGridViewTextBoxColumn Gia;
         private System.Windows.Forms.DataGridViewTextBoxColumn thanhtien;
-        private System.Windows.Forms.ComboBox cbDM;
-        private System.Windows.Forms.Label label1;
     }
 }
